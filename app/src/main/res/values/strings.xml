@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Monage</string>
+    <string name="menu_utama">Menu Utama</string>
+    <string name="total_value">Rp 1.000.000</string>
+    <string name="value_total_pengeluaran">Rp 250.000</string>
+    <string name="value_total_pemasukan">Rp 750.000</string>
+    <string name="txt_pemasukan">Pemasukan</string>
+    <string name="txt_kategori">Kategori</string>
+    <string name="uang_saku">Uang Saku</string>
+    <string name="cashback">Cashback</string>
+    <string name="bonus">Bonus</string>
+    <string name="kas_kecil">Kas Kecil</string>
+    <string name="gaji">Gaji</string>
+    <string name="lainnya_pemasukan">Lainnya</string>
+    <string name="makanan">Makanan</string>
+    <string name="kesehatan">Kesehatan</string>
+    <string name="transportasi">Transportasi</string>
+    <string name="pendidikan">Pendidikan</string>
+    <string name="paket_data">Paket Data</string>
+    <string name="lainnya_pengeluaran">Lainnya</string>
+    <string name="hint_nominal">0</string>
+    <string name="nominal">Nominal</string>
+    <string name="pilih_tanggal">Pilih tanggal</string>
+    <string name="tgl_default">01-01-1990</string>
+</resources>

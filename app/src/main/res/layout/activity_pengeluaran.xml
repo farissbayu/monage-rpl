@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PemasukanActivity">
+
+    // Kategori
+    <LinearLayout
+        android:layout_width="327dp"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp">
+
+        // Teks Kategori
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_kategori"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/montserrat_alternates_bold"
+            android:textColor="@color/black"
+            android:textSize="17sp"/>
+
+        <com.google.android.material.chip.ChipGroup
+            android:layout_marginTop="24dp"
+            android:layout_width="327dp"
+            android:layout_height="170dp"
+            app:singleSelection="true"
+            android:layout_gravity="center">
+
+            // Makanan
+            <com.google.android.material.chip.Chip
+                android:id="@+id/makanan"
+                style="@style/ChipColorPengeluaran"
+                android:layout_width="156dp"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:text="@string/makanan"
+                android:textAlignment="center" />
+
+            // Kesehatan
+            <com.google.android.material.chip.Chip
+                android:id="@+id/kesehatan"
+                android:layout_marginLeft="4dp"
+                style="@style/ChipColorPengeluaran"
+                android:layout_width="156dp"
+                android:layout_height="48dp"
+                android:text="@string/kesehatan"
+                android:textAlignment="center" />
+
+            // Transportasi
+            <com.google.android.material.chip.Chip
+                android:id="@+id/transportasi"
+                style="@style/ChipColorPengeluaran"
+                android:layout_width="156dp"
+                android:layout_height="48dp"
+                android:text="@string/transportasi"
+                android:textAlignment="center" />
+
+            // Pendidikan
+            <com.google.android.material.chip.Chip
+                android:id="@+id/pendidikan"
+                android:layout_marginLeft="4dp"
+                style="@style/ChipColorPengeluaran"
+                android:layout_width="156dp"
+                android:layout_height="48dp"
+                android:text="@string/pendidikan"
+                android:textAlignment="center" />
+
+            // Paket data
+            <com.google.android.material.chip.Chip
+                android:id="@+id/paket_data"
+                style="@style/ChipColorPengeluaran"
+                android:layout_width="156dp"
+                android:layout_height="48dp"
+                android:text="@string/paket_data"
+                android:textAlignment="center" />
+
+            // Lainnya
+            <com.google.android.material.chip.Chip
+                android:id="@+id/lainnya_pengeluaran"
+                android:layout_marginLeft="4dp"
+                style="@style/ChipColorPengeluaran"
+                android:layout_width="156dp"
+                android:layout_height="48dp"
+                android:text="@string/lainnya_pengeluaran"
+                android:textAlignment="center" />
+
+
+        </com.google.android.material.chip.ChipGroup>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tanggal"
+            android:textAlignment="center"
+            android:fontFamily="@font/montserrat_alternates_bold"
+            android:textSize="17sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_marginTop="12dp"
+            android:id="@+id/pilih_tanggal_pengeluaran"
+            android:layout_width="190dp"
+            android:layout_height="53dp"
+            android:background="@drawable/calendar_view"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:hint="@string/tgl_default"/>
+    </LinearLayout>
+
+    // Nominal
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/nominal"
+            android:textAlignment="center"
+            android:fontFamily="@font/montserrat_alternates_bold"
+            android:textSize="17sp"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:inputType="number"
+            android:id="@+id/nominal_pengeluaran"
+            android:layout_marginTop="8dp"
+            android:layout_width="292dp"
+            android:layout_height="57dp"
+            android:background="@drawable/view_nominal_pengeluaran"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:hint="0"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="24dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/simpan_pengeluaran"
+            android:layout_width="147dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button_simpan"
+            android:fontFamily="@font/montserrat_alternates_bold"
+            android:text="Simpan"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+</LinearLayout>

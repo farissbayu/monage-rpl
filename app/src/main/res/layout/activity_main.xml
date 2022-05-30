@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/standar_bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:background="@drawable/bottom_sheet"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_baseline_remove_24"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tools"
+            android:layout_margin="20dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_pemasukan"
+            style="@android:style/Widget.Material.Button.Borderless.Colored"
+            android:layout_width="320dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="70dp"
+            android:background="@drawable/btn_pemasukan"
+            android:fontFamily="@font/montserrat_alternates_bold"
+            android:text="Pemasukan"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_pengeluaran"
+            android:layout_width="320dp"
+            android:layout_height="80dp"
+            android:fontFamily="@font/montserrat_alternates_bold"
+            android:text="Pengeluaran"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textAllCaps="false"
+            android:background="@drawable/btn_pengeluaran"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="170dp"
+            android:layout_marginBottom="70dp"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="350dp"
+            android:layout_height="125dp"
+            android:background="@drawable/custom_button_detail"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/total_uang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/montserrat_alternates_semibold"
+                android:text="@string/total_value"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="28sp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/total_pemasukan"
+                    android:layout_width="140dp"
+                    android:layout_height="48dp"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/custom_button_pemasukan"
+                    android:text="@string/value_total_pemasukan"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/total_pengeluaran"
+                    android:layout_width="140dp"
+                    android:layout_height="48dp"
+                    android:layout_margin="4dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="@drawable/custom_button_pengeluaran"
+                    android:text="@string/value_total_pengeluaran"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
