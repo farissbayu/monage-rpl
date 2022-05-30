@@ -10,11 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Monage">
 
-        // Pengeluaran
+        // Detail Pengeluaran Activity
         <activity
-            android:name=".PengeluaranActivity"
+            android:name=".EditPengeluaranActivity"
             android:exported="false"
-            android:label="Pengeluaran"
+            android:label="Detail Pengeluaran"
             android:parentActivityName=".MainActivity">
 
             <meta-data
@@ -23,7 +23,31 @@
 
         </activity>
 
-        // Pemasukan
+        // Detail Pemasukan Activity
+        <activity
+            android:name=".EditPemasukanActivity"
+            android:exported="false"
+            android:label="Detail Pemasukan"
+            android:parentActivityName=".MainActivity">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+
+        </activity>
+
+        // Pengeluaran Activity
+        <activity
+            android:name=".PengeluaranActivity"
+            android:exported="true"
+            android:label="Pengeluaran"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        // Pemasukan Activity
         <activity
             android:name=".PemasukanActivity"
             android:exported="true"
@@ -40,7 +64,7 @@
             </intent-filter>
         </activity>
 
-        // Main Menu
+        // Main Activity
         <activity
             android:name=".MainActivity"
             android:exported="true">

@@ -8,6 +8,7 @@
         <entry key="..\:/Faris/Codingan Kotlin/Coding/Monage/app/src/main/res/drawable/btn_datepicker.xml" value="0.121" />
         <entry key="..\:/Faris/Codingan Kotlin/Coding/Monage/app/src/main/res/drawable/btn_pemasukan.xml" value="0.2265" />
         <entry key="..\:/Faris/Codingan Kotlin/Coding/Monage/app/src/main/res/drawable/btn_pengeluaran.xml" value="0.121" />
+        <entry key="..\:/Faris/Codingan Kotlin/Coding/Monage/app/src/main/res/drawable/button_hapus.xml" value="0.246" />
         <entry key="..\:/Faris/Codingan Kotlin/Coding/Monage/app/src/main/res/drawable/button_simpan.xml" value="0.2265" />
         <entry key="..\:/Faris/Codingan Kotlin/Coding/Monage/app/src/main/res/drawable/calendar_view.xml" value="0.2265" />
         <entry key="..\:/Faris/Codingan Kotlin/Coding/Monage/app/src/main/res/drawable/custom_button_detail.xml" value="0.2265" />
@@ -18,6 +19,8 @@
         <entry key="..\:/Faris/Codingan Kotlin/Coding/Monage/app/src/main/res/drawable/kategori_pengeluaran.xml" value="0.2265" />
         <entry key="..\:/Faris/Codingan Kotlin/Coding/Monage/app/src/main/res/drawable/view_nominal.xml" value="0.2265" />
         <entry key="..\:/Faris/Codingan Kotlin/Coding/Monage/app/src/main/res/drawable/view_nominal_pengeluaran.xml" value="0.2265" />
+        <entry key="..\:/Faris/Codingan Kotlin/Coding/Monage/app/src/main/res/layout/activity_edit_pemasukan.xml" value="0.264" />
+        <entry key="..\:/Faris/Codingan Kotlin/Coding/Monage/app/src/main/res/layout/activity_edit_pengeluaran.xml" value="0.264" />
         <entry key="..\:/Faris/Codingan Kotlin/Coding/Monage/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Faris/Codingan Kotlin/Coding/Monage/app/src/main/res/layout/activity_pemasukan.xml" value="0.264" />
         <entry key="..\:/Faris/Codingan Kotlin/Coding/Monage/app/src/main/res/layout/activity_pengeluaran.xml" value="0.264" />
