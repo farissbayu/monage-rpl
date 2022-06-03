@@ -1,48 +1,67 @@
 package com.example.monage
 
-import android.app.DatePickerDialog
 import android.content.Intent
 import android.os.Bundle
+import android.provider.ContactsContract
+import android.view.View
 import android.widget.Button
+import android.widget.EditText
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import kotlinx.android.synthetic.main.activity_main.*
+import com.google.android.material.chip.ChipGroup
 import kotlinx.android.synthetic.main.activity_pemasukan.*
-import java.text.SimpleDateFormat
-import java.util.*
+import kotlinx.android.synthetic.main.activity_pengeluaran.*
 
 class PemasukanActivity : AppCompatActivity() {
 
-    private lateinit var tvDatePicker: TextView
+    lateinit var input_tanggal: EditText
+    lateinit var input_nominal: EditText
+    lateinit var input_kategori: EditText
+    lateinit var button_simpan: Button
+    val aksi: Int = 1
+
+    //private lateinit var tvDatePicker: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pemasukan)
 
-        simpan_pemasukan.setOnClickListener{
+        input_tanggal = findViewById(R.id.pilih_tanggal_pemasukan)
+        input_nominal = findViewById(R.id.nominal_pemasukan)
+        input_kategori = findViewById(R.id.kategori_pemasukan)
+        button_simpan = findViewById(R.id.simpan_pemasukan)
+
+
+        simpan_pemasukan.setOnClickListener{ view ->
+            addRecord(view)
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
-
-        tvDatePicker = findViewById(R.id.pilih_tanggal_pemasukan)
-
-        val myCalendar = Calendar.getInstance()
-
-        val pemasukanDatePicker = DatePickerDialog.OnDateSetListener { view, year, month, dayOfMonth ->
-            myCalendar.set(Calendar.YEAR, year)
-            myCalendar.set(Calendar.MONTH, month)
-            myCalendar.set(Calendar.DAY_OF_MONTH, dayOfMonth)
-            updateLable(myCalendar)
-        }
-
-        tvDatePicker.setOnClickListener{
-            DatePickerDialog(this, pemasukanDatePicker, myCalendar.get(Calendar.YEAR), myCalendar.get(Calendar.MONTH), myCalendar.get(Calendar.DAY_OF_MONTH)).show()
-        }
     }
 
-    private fun updateLable(myCalendar: Calendar) {
-        val myFormat = ("dd-MM-yyyy")
-        val sdf = SimpleDateFormat(myFormat, Locale.UK)
-        tvDatePicker.setText(sdf.format(myCalendar.time))
+    private fun addRecord(view: View){
+        val nmnl = Integer.valueOf(nominal_pemasukan.text.toString())
+        val ktgr = kategori_pemasukan.text.toString()
+        val tggl = pilih_tanggal_pemasukan.text.toString()
+        val databaseHandler: DatabaseHelper = DatabaseHelper(this)
+
+        if (!tggl.isEmpty() && !ktgr.isEmpty()) {
+            val status =
+                databaseHandler.addSaldo(SaldoModelClass(0, nmnl, 1, ktgr, tggl))
+            if (status > -1) {
+                Toast.makeText(applicationContext, "Berhasil ditambahkan", Toast.LENGTH_LONG).show()
+                nominal_pemasukan.text.clear()
+                kategori_pemasukan.text.clear()
+                pilih_tanggal_pemasukan.text.clear()
+            }
+        } else {
+            Toast.makeText(
+                applicationContext,
+                "Gagal ditambahkan",
+                Toast.LENGTH_LONG
+            ).show()
+        }
+
     }
 }

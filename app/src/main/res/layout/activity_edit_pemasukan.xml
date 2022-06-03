@@ -10,10 +10,10 @@
     // Kategori
     <LinearLayout
         android:layout_width="327dp"
-        android:layout_height="200dp"
+        android:layout_height="90dp"
         android:orientation="vertical"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp">
+        android:layout_marginTop="80dp">
 
         // Teks Kategori
         <TextView
@@ -25,74 +25,18 @@
             android:textColor="@color/black"
             android:textSize="17sp"/>
 
-        <com.google.android.material.chip.ChipGroup
-            android:layout_marginTop="24dp"
-            android:layout_width="327dp"
-            android:layout_height="170dp"
-            app:singleSelection="true"
-            android:layout_gravity="center">
-
-            // Uang saku
-            <com.google.android.material.chip.Chip
-                android:id="@+id/uang_saku"
-                style="@style/ChipColorPemasukan"
-                android:layout_width="156dp"
-                android:layout_height="48dp"
-                android:gravity="center"
-                android:text="@string/uang_saku"
-                android:textAlignment="center" />
-
-            // Cashback
-            <com.google.android.material.chip.Chip
-                android:id="@+id/cashback"
-                android:layout_marginLeft="4dp"
-                style="@style/ChipColorPemasukan"
-                android:layout_width="156dp"
-                android:layout_height="48dp"
-                android:text="@string/cashback"
-                android:textStyle="italic"
-                android:textAlignment="center" />
-
-            // Bonus
-            <com.google.android.material.chip.Chip
-                android:id="@+id/bonus"
-                style="@style/ChipColorPemasukan"
-                android:layout_width="156dp"
-                android:layout_height="48dp"
-                android:text="@string/bonus"
-                android:textAlignment="center" />
-
-            // Kas kecil
-            <com.google.android.material.chip.Chip
-                android:id="@+id/kas_kecil"
-                android:layout_marginLeft="4dp"
-                style="@style/ChipColorPemasukan"
-                android:layout_width="156dp"
-                android:layout_height="48dp"
-                android:text="@string/kas_kecil"
-                android:textAlignment="center" />
-
-            // Gaji
-            <com.google.android.material.chip.Chip
-                android:id="@+id/gaji"
-                style="@style/ChipColorPemasukan"
-                android:layout_width="156dp"
-                android:layout_height="48dp"
-                android:text="@string/gaji"
-                android:textAlignment="center" />
-
-            // Lainnya
-            <com.google.android.material.chip.Chip
-                android:id="@+id/lainnya_pemasukan"
-                android:layout_marginLeft="4dp"
-                style="@style/ChipColorPemasukan"
-                android:layout_width="156dp"
-                android:layout_height="48dp"
-                android:text="@string/lainnya_pemasukan"
-                android:textAlignment="center" />
-
-
-        </com.google.android.material.chip.ChipGroup>
+        <EditText
+            android:layout_marginTop="12dp"
+            android:id="@+id/kategori_pemasukan"
+            android:layout_width="190dp"
+            android:layout_height="53dp"
+            android:background="@drawable/kategori_bgf"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:hint="@string/kategori_pemasukan" />
 
 
     </LinearLayout>
@@ -100,6 +44,7 @@
 
     // Tanggal
     <LinearLayout
+        android:layout_marginTop="24dp"
         android:layout_width="match_parent"
         android:layout_height="90dp"
         android:orientation="vertical"

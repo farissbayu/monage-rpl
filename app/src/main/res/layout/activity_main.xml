@@ -91,7 +91,8 @@
                 android:layout_height="match_parent"
                 android:gravity="center">
 
-                <androidx.appcompat.widget.AppCompatButton
+                <TextView
+                    android:gravity="center"
                     android:id="@+id/total_pemasukan"
                     android:layout_width="140dp"
                     android:layout_height="48dp"
@@ -102,7 +103,8 @@
                     android:textColor="#FFFFFF"
                     android:textSize="18sp" />
 
-                <androidx.appcompat.widget.AppCompatButton
+                <TextView
+                    android:gravity="center"
                     android:id="@+id/total_pengeluaran"
                     android:layout_width="140dp"
                     android:layout_height="48dp"
