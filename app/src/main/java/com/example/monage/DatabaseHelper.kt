@@ -10,7 +10,7 @@ class DatabaseHelper(context: Context) :
     SQLiteOpenHelper(context, DATABASE_NAME, null, DATABASE_VERSION) {
 
     companion object{
-        private val DATABASE_NAME = "monage.db"
+        private val DATABASE_NAME = "monage.dasdb"
         private val DATABASE_VERSION = 1
 
         private val TABLE_NAME = "monage_database"
@@ -22,11 +22,11 @@ class DatabaseHelper(context: Context) :
     }
 
     override fun onCreate(db: SQLiteDatabase?) {
-        val query = ("CREATE TABLE " + TABLE_NAME + "("
-                + COLUMN_ID + "INTEGER PRIMARY KEY,"
-                + COLUMN_SALDO + " INTEGER,"
-                + COLUMN_AKSI + " INTEGER,"
-                + COLUMN_KATEGORI + " TEXT,"
+        val query = ("CREATE TABLE " + TABLE_NAME + " ("
+                + COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
+                + COLUMN_SALDO + " INTEGER, "
+                + COLUMN_AKSI + " INTEGER, "
+                + COLUMN_KATEGORI + " TEXT, "
                 + COLUMN_TANGGAL + " TEXT" + ")")
         db?.execSQL(query)
     }

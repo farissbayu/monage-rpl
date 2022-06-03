@@ -28,7 +28,7 @@
             android:id="@+id/kategori_pemasukan"
             android:layout_width="190dp"
             android:layout_height="53dp"
-            android:background="@drawable/kategori_bgf"
+            android:background="@drawable/kategori_bg_pemasukan"
             android:textAlignment="center"
             android:layout_gravity="center"
             android:gravity="center"

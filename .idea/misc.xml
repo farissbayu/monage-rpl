@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Faris/Codingan Kotlin/Coding/Monage - Copy/app/src/main/res/drawable/bg_item_rv_pemasukan.xml" value="0.251" />
+        <entry key="..\:/Faris/Codingan Kotlin/Coding/Monage - Copy/app/src/main/res/drawable/bg_item_rv_pengeluaran.xml" value="0.251" />
+        <entry key="..\:/Faris/Codingan Kotlin/Coding/Monage - Copy/app/src/main/res/drawable/kategori_bg_pemasukan.xml" value="0.251" />
+        <entry key="..\:/Faris/Codingan Kotlin/Coding/Monage - Copy/app/src/main/res/drawable/kategori_bg_pengeluaran.xml" value="0.251" />
         <entry key="..\:/Faris/Codingan Kotlin/Coding/Monage - Copy/app/src/main/res/drawable/kategori_bgf.xml" value="0.246" />
         <entry key="..\:/Faris/Codingan Kotlin/Coding/Monage - Copy/app/src/main/res/drawable/kategori_pemasukan.xml" value="0.246" />
         <entry key="..\:/Faris/Codingan Kotlin/Coding/Monage - Copy/app/src/main/res/layout/activity_edit_pemasukan.xml" value="0.25" />
@@ -10,6 +14,8 @@
         <entry key="..\:/Faris/Codingan Kotlin/Coding/Monage - Copy/app/src/main/res/layout/activity_main.xml" value="0.2418478260869565" />
         <entry key="..\:/Faris/Codingan Kotlin/Coding/Monage - Copy/app/src/main/res/layout/activity_pemasukan.xml" value="0.264" />
         <entry key="..\:/Faris/Codingan Kotlin/Coding/Monage - Copy/app/src/main/res/layout/activity_pengeluaran.xml" value="0.25" />
+        <entry key="..\:/Faris/Codingan Kotlin/Coding/Monage - Copy/app/src/main/res/layout/rview_item_pemasukan.xml" value="0.4" />
+        <entry key="..\:/Faris/Codingan Kotlin/Coding/Monage - Copy/app/src/main/res/layout/rview_item_pengeluaran.xml" value="0.25" />
         <entry key="..\:/Faris/Codingan Kotlin/Coding/Monage/app/src/main/res/drawable/back_button.xml" value="0.2265" />
         <entry key="..\:/Faris/Codingan Kotlin/Coding/Monage/app/src/main/res/drawable/bottom_sheet.xml" value="0.2265" />
         <entry key="..\:/Faris/Codingan Kotlin/Coding/Monage/app/src/main/res/drawable/btn_datepicker.xml" value="0.121" />
