@@ -39,6 +39,15 @@
         <entry key="..\:/Faris/Codingan Kotlin/Coding/Monage/app/src/main/res/layout/activity_pengeluaran.xml" value="0.264" />
         <entry key="..\:/Faris/Codingan Kotlin/Coding/Monage/app/src/main/res/layout/tab_pengeluaran.xml" value="0.22418478260869565" />
         <entry key="..\:/Faris/Codingan Kotlin/Coding/Monage/app/src/main/res/layout/temp.xml" value="0.22418478260869565" />
+        <entry key="..\:/xampp/htdocs/monage-rpl-master/app/src/main/res/drawable/bg_item_rv_pemasukan.xml" value="0.2638888888888889" />
+        <entry key="..\:/xampp/htdocs/monage-rpl-master/app/src/main/res/drawable/kategori_bg_pengeluaran.xml" value="0.2638888888888889" />
+        <entry key="..\:/xampp/htdocs/monage-rpl-master/app/src/main/res/layout/activity_edit_pemasukan.xml" value="0.14270833333333333" />
+        <entry key="..\:/xampp/htdocs/monage-rpl-master/app/src/main/res/layout/activity_edit_pengeluaran.xml" value="0.14270833333333333" />
+        <entry key="..\:/xampp/htdocs/monage-rpl-master/app/src/main/res/layout/activity_main.xml" value="0.14270833333333333" />
+        <entry key="..\:/xampp/htdocs/monage-rpl-master/app/src/main/res/layout/activity_pemasukan.xml" value="0.14270833333333333" />
+        <entry key="..\:/xampp/htdocs/monage-rpl-master/app/src/main/res/layout/activity_pengeluaran.xml" value="0.14270833333333333" />
+        <entry key="..\:/xampp/htdocs/monage-rpl-master/app/src/main/res/layout/rview_item_pemasukan.xml" value="0.14270833333333333" />
+        <entry key="..\:/xampp/htdocs/monage-rpl-master/app/src/main/res/layout/rview_item_pengeluaran.xml" value="0.25" />
       </map>
     </option>
   </component>

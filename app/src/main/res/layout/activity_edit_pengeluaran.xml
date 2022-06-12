@@ -6,7 +6,42 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".PemasukanActivity">
-
+    <TextView
+        android:id="@+id/txAksi2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/montserrat_alternates_bold"
+        android:textColor="@color/black"
+        android:textSize="17sp"/>
+    <TextView
+        android:id="@+id/idKat2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/montserrat_alternates_bold"
+        android:textColor="@color/black"
+        android:textSize="17sp"/>
+    <TextView
+        android:id="@+id/txKat2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/montserrat_alternates_bold"
+        android:textColor="@color/black"
+        android:textSize="17sp"/>
+    <TextView
+        android:id="@+id/txNom2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/montserrat_alternates_bold"
+        android:textColor="@color/black"
+        android:textSize="17sp"/>
     // Kategori
     <LinearLayout
         android:layout_width="327dp"
@@ -57,7 +92,7 @@
             android:textSize="17sp"
             android:textColor="@color/black"/>
 
-        <EditText
+        <TextView
             android:layout_marginTop="12dp"
             android:id="@+id/pilih_tanggal_pengeluaran"
             android:layout_width="190dp"

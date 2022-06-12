@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">Monage</string>
     <string name="menu_utama">Menu Utama</string>
-    <string name="total_value">Rp 750.000</string>
-    <string name="value_total_pengeluaran">Rp 250.000</string>
-    <string name="value_total_pemasukan">Rp 1.000.000</string>
+    <string name="total_value">Rp 0</string>
+    <string name="value_total_pengeluaran">Rp 0</string>
+    <string name="value_total_pemasukan">Rp 0</string>
     <string name="txt_pemasukan">Pemasukan</string>
     <string name="txt_kategori">Kategori</string>
     <string name="uang_saku">Uang Saku</string>

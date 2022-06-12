@@ -1,12 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lySaldo"
     android:layout_width="320dp"
     android:layout_height="60dp"
     android:orientation="horizontal"
     android:padding="10dp"
+    android:layout_marginBottom="15dp"
     android:layout_gravity="center_horizontal"
     android:background="@drawable/bg_item_rv_pemasukan">
-
+    <TextView
+        android:id="@+id/tv_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"></TextView>
+    <TextView
+        android:id="@+id/tv_aksi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"></TextView>
     <TextView
         android:id="@+id/tv_kategori_pemasukan"
         android:layout_width="90dp"

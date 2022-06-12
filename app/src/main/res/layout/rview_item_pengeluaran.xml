@@ -10,14 +10,14 @@
     <TextView
         android:id="@+id/tv_kategori_pengeluaran"
         android:layout_width="90dp"
-        android:layout_height="25dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
         android:layout_marginLeft="12dp"
         android:background="@drawable/kategori_bg_pengeluaran"
-        android:textStyle="bold"
-        android:textSize="12dp"
+        android:gravity="center"
         android:text="kategori"
-        android:gravity="center"/>
+        android:textSize="12dp"
+        android:textStyle="bold" />
     <TextView
         android:id="@+id/tv_tgl_pengeluaran"
         android:layout_width="55dp"

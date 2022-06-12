@@ -4,7 +4,9 @@ import android.content.ContentValues
 import android.content.Context
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
+import android.util.Log
 import android.widget.Toast
+import java.lang.Exception
 
 class DatabaseHelper(context: Context) :
     SQLiteOpenHelper(context, DATABASE_NAME, null, DATABASE_VERSION) {
@@ -50,4 +52,57 @@ class DatabaseHelper(context: Context) :
         db.close()
         return success
     }
+    fun getAllSaldo(mCtx:Context): ArrayList<SaldoModelClass2> {
+        val selectQuery = "SELECT * FROM $TABLE_NAME"
+        val db = this.readableDatabase
+        val cursor = db.rawQuery(selectQuery, null)
+        val salList = ArrayList<SaldoModelClass2>()
+        if (cursor.count == 0)
+            Toast.makeText(mCtx, "Data tidak ditemukan", Toast.LENGTH_SHORT).show() else {
+            while (cursor.moveToNext()) {
+                val saldo = SaldoModelClass2()
+                saldo.id = cursor.getInt(cursor.getColumnIndexOrThrow(COLUMN_ID))
+                saldo.saldo = cursor.getInt(cursor.getColumnIndexOrThrow(COLUMN_SALDO))
+                saldo.tanggal = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_TANGGAL))
+                saldo.kategori = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_KATEGORI))
+                saldo.aksi = cursor.getInt(cursor.getColumnIndexOrThrow(COLUMN_AKSI))
+                salList.add(saldo)
+            }
+            Toast.makeText(mCtx,"${cursor.count.toString()} Data ditemukan", Toast.LENGTH_SHORT).show()
+        }
+        cursor.close()
+        db.close()
+        return salList
+    }
+    fun deleteSaldo(id: Int) : Boolean{
+        val qry = "DELETE FROM $TABLE_NAME where $COLUMN_ID = $id"
+        val db = this.writableDatabase
+        var result : Boolean = false
+        try{
+            val cursor = db.execSQL(qry)
+            result = true
+        }catch (e:Exception){
+            Log.e(ContentValues.TAG, "Hapus Eror")
+        }
+        db.close()
+        return result
+    }
+    fun editSaldo(id: String, kategori: String, tanggal: String, saldo: Int) : Boolean{
+        val db = this.writableDatabase
+        val contentValues = ContentValues()
+        var result : Boolean = false
+        contentValues.put(COLUMN_KATEGORI,kategori)
+        contentValues.put(COLUMN_TANGGAL,tanggal)
+        contentValues.put(COLUMN_SALDO,saldo)
+        try{
+            db.update(TABLE_NAME,contentValues,"$COLUMN_ID = ?", arrayOf(id))
+            result = true
+        }catch (e:Exception){
+            Log.e(ContentValues.TAG, "Update Eror")
+            result = false
+        }
+        return result
+    }
+
 }
+

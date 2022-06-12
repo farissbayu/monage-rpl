@@ -5,6 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginTop="154dp"
+        android:layout_marginLeft="35dp"/>
 
     <FrameLayout
         android:id="@+id/standar_bottom_sheet"
@@ -128,6 +135,7 @@
             tools:visibility="gone"/>
 
     </LinearLayout>
+
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
 

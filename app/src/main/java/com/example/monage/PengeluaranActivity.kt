@@ -1,19 +1,13 @@
 package com.example.monage
 
-import android.app.DatePickerDialog
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
-import android.widget.TextView
 import android.widget.Toast
-import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.activity_pemasukan.*
 import kotlinx.android.synthetic.main.activity_pengeluaran.*
-import java.text.SimpleDateFormat
-import java.util.*
 
 class PengeluaranActivity : AppCompatActivity() {
 
