@@ -30,6 +30,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, PengeluaranActivity::class.java)
             startActivity(intent)
         }
+        btnrefresh.setOnClickListener{
+            getData()
+            getTotal3()
+        }
 
     }
     private fun getTotal3(){
@@ -40,11 +44,23 @@ class MainActivity : AppCompatActivity() {
         if(rs.moveToFirst()&&rs2.moveToFirst()){
             var saldo2 = rs2.getString(0)
             var saldo1 = rs.getString(0)
-            var rs3:Int = saldo1.toInt()-saldo2.toInt()
+            if (saldo1!=null && saldo2==null) {
+                var rs3: Int = saldo1.toInt() - 0
                 total_uang.setText("Rp " + rs3.toString())
-                total_pengeluaran.setText("Rp " + rs2.getString(0))
+                total_pengeluaran.setText("Rp 0")
                 total_pemasukan.setText("Rp " + rs.getString(0))
-
+            }
+            else if (saldo1==null && saldo2!=null) {
+                var rs3: Int = 0 - saldo2.toInt()
+                total_uang.setText("Rp " + rs3.toString())
+                total_pengeluaran.setText("Rp "+ rs2.getString(0))
+                total_pemasukan.setText("Rp 0")
+            }
+            else{
+                total_uang.setText("Rp 0")
+                total_pengeluaran.setText("Rp 0")
+                total_pemasukan.setText("Rp 0")
+            }
         }
     }
     private fun getData() {

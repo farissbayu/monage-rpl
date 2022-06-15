@@ -12,7 +12,15 @@
         android:layout_height="500dp"
         android:layout_marginTop="154dp"
         android:layout_marginLeft="35dp"/>
-
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="60dp"
+        android:layout_height="55dp"
+        android:layout_marginRight="20dp"
+        android:clickable="true"
+        android:id="@+id/btnrefresh"
+        app:srcCompat="@drawable/ic_baseline_refresh_24"
+        android:layout_marginTop="580dp"
+        android:layout_gravity="right"/>
     <FrameLayout
         android:id="@+id/standar_bottom_sheet"
         android:layout_width="match_parent"
